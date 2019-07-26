@@ -16,22 +16,55 @@
 
 
 <div class="item panel" data-color="violet" data-aos="fade-up">1</div>
-
-<div class="item panel" data-color="indigo" data-aos="fade-down"
-id="trigger-left">2</div>
-
+<div class="item panel" data-color="indigo" data-aos="fade-down">2</div>
 <div class="item panel" data-color="blue" data-aos="fade-right">3</div>
 <div class="item panel" data-color="green" data-aos="fade-left">4</div>
+<div class="item panel" data-color="yellow" data-aos="zoom-in">5</div>
 
-<div class="item panel" data-color="yellow" 
-id="trigger-right" data-aos="zoom-in">5</div>
+<!-- Pasos -->
+<div class="panel" data-color="orange" data-aos="zoom-out">
+  <h1> Modelo de trabajo {{ 'home.texto' | translate }}</h1>
+  <p>citizen court writing everyone nervous cattle popular push barn might hay secret pile valuable fix apple given piece increase beneath mood purple slowly breathe</p>
+  <mat-vertical-stepper [linear]="isLinear">
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Análisis</ng-template>
+      <h1>Agendamos una junta para escuchar su solicitud y sus procesos , resolver dudas y aterrizar alcances de software.</h1>
+    </mat-step>
 
-<div class="item panel" data-color="orange" data-aos="zoom-out">6</div>
+    <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>Propuesta técnica</ng-template>
+      <h1>Según el análisis se entrega una propuesta en formato pdf con la solución(es).  </h1>
+    </mat-step>
 
-<div class="item panel" data-color="red" data-aos="slide-up">7</div>
+    <mat-step>
+      <ng-template matStepLabel>Propuesta económica</ng-template>
+      <h1>Aprobada la propuesta por el cliente se genera un contrato detallado con solución, alcances, tiempos y costos.  </h1>
+    </mat-step>
 
-<div class="item panel" data-color="violet" data-aos="flip-up">8</div>
-<div class="item panel" data-color="indigo" data-aos="flip-down">9</div>
-<div class="item panel" data-color="blue" data-aos="flip-right">10</div>
-<div class="item panel" data-color="green" data-aos="flip-left">11</div>
+    <mat-step>
+      <ng-template matStepLabel>Desarrollo de solución</ng-template>
+      <h1>Se construye la solución.</h1>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Desarrollo de solución</ng-template>
+      <h1>Se entrega a cliente solución para su aprobación.   </h1>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Liberación de software</ng-template>
+      <h1>Se entrega garantía de soporte.</h1>
+    </mat-step>
+
+  </mat-vertical-stepper>
+</div>
+
+<div class="item panel" data-color="red" data-aos="zoom-out">6</div>
+<div class="item panel" data-color="violet" data-aos="slide-up"
+id="trigger-left">7</div>
+<div class="item panel" data-color="indigo" data-aos="flip-up">8</div>
+<div class="item panel" data-color="blue" data-aos="flip-down">9</div>
+<div class="item panel" data-color="green" data-aos="flip-right"
+id="trigger-right">10</div>
+<div class="item panel" data-color="yellow" data-aos="flip-left">11</div>
 
