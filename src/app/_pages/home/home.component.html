@@ -23,37 +23,32 @@
 
 <!-- Pasos -->
 <div class="panel" data-color="orange" data-aos="zoom-out">
-  <h1> Modelo de trabajo {{ 'home.texto' | translate }}</h1>
-  <p>citizen court writing everyone nervous cattle popular push barn might hay secret pile valuable fix apple given piece increase beneath mood purple slowly breathe</p>
+  <h1> {{ 'home.proceso.titulo' | translate }} </h1>
+  <p> {{ 'home.proceso.descripcion' | translate }} </p>
   <mat-vertical-stepper [linear]="isLinear">
     <mat-step [stepControl]="firstFormGroup">
-      <ng-template matStepLabel>Análisis</ng-template>
-      <h1>Agendamos una junta para escuchar su solicitud y sus procesos , resolver dudas y aterrizar alcances de software.</h1>
+      <ng-template matStepLabel> {{ 'home.proceso.primero.subtitulo' | translate }} </ng-template>
+      <h3> {{ 'home.proceso.primero.descripcion' | translate }} </h3>
     </mat-step>
 
     <mat-step [stepControl]="secondFormGroup">
-      <ng-template matStepLabel>Propuesta técnica</ng-template>
-      <h1>Según el análisis se entrega una propuesta en formato pdf con la solución(es).  </h1>
+      <ng-template matStepLabel>{{ 'home.proceso.segundo.subtitulo' | translate }}</ng-template>
+      <h3> {{ 'home.proceso.segundo.descripcion' | translate }} </h3>
     </mat-step>
 
     <mat-step>
-      <ng-template matStepLabel>Propuesta económica</ng-template>
-      <h1>Aprobada la propuesta por el cliente se genera un contrato detallado con solución, alcances, tiempos y costos.  </h1>
+      <ng-template matStepLabel>{{ 'home.proceso.tercero.subtitulo' | translate }}</ng-template>
+      <h3> {{ 'home.proceso.tercero.descripcion' | translate }} </h3>
     </mat-step>
 
     <mat-step>
-      <ng-template matStepLabel>Desarrollo de solución</ng-template>
-      <h1>Se construye la solución.</h1>
+      <ng-template matStepLabel>{{ 'home.proceso.cuarto.subtitulo' | translate }}</ng-template>
+      <h3> {{ 'home.proceso.cuarto.descripcion' | translate }} </h3>
     </mat-step>
 
     <mat-step>
-      <ng-template matStepLabel>Desarrollo de solución</ng-template>
-      <h1>Se entrega a cliente solución para su aprobación.   </h1>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>Liberación de software</ng-template>
-      <h1>Se entrega garantía de soporte.</h1>
+      <ng-template matStepLabel>{{ 'home.proceso.quinto.subtitulo' | translate }}</ng-template>
+      <h3> {{ 'home.proceso.quinto.descripcion' | translate }} </h3>
     </mat-step>
 
   </mat-vertical-stepper>

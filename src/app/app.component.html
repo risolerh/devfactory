@@ -1,6 +1,33 @@
 
 <mat-toolbar>
-        <span>My Application</span>
-      </mat-toolbar>
+  <span>My Application</span>
+  
+  <span class="fill-remaining-space"></span>
+
+  <mat-form-field>
+    <mat-label> {{ "idioma" | translate }} </mat-label>
+      <mat-select matNativeControl 
+          placeholder="How Many?"
+          [(value)]="selectedLanguage"
+          (selectionChange)="toogleLanguage($event.value)">
+        <mat-option value="es">Español</mat-option>
+        <mat-option value="en">English</mat-option>      
+      </mat-select>
+    </mat-form-field>
+    
+
+    <button mat-button [matMenuTriggerFor]="idioma"> 
+      {{ "idioma" | translate }} 
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+    </button>
+    
+    <mat-menu #idioma="matMenu">
+      <button mat-menu-item>Español</button>
+      <button mat-menu-item>Ingles</button>
+    </mat-menu>
+
+</mat-toolbar>
+
       
+
 <router-outlet></router-outlet>
