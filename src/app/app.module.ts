@@ -6,9 +6,16 @@ import { NgModule } from '@angular/core';
  */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-
-import { MatSelectModule , MatFormFieldModule, MatStepperModule
-       , MatToolbarModule,  MatIconModule, MatMenuModule }  from '@angular/material';
+/** Material design **/
+import { MatSelectModule 
+       , MatFormFieldModule
+       , MatStepperModule
+       , MatToolbarModule
+       , MatIconModule
+       , MatListModule
+       , MatSidenavModule
+       , MatMenuModule 
+       , MatButtonModule}  from '@angular/material';
 
 
 /*
@@ -46,7 +53,8 @@ export function createTranslateLoader(http: HttpClient) {
     }),
      /* material */
      BrowserAnimationsModule, MatToolbarModule, MatStepperModule, MatSelectModule,
-     MatFormFieldModule, MatIconModule, MatMenuModule
+     MatFormFieldModule, MatIconModule, MatMenuModule, MatListModule, MatSidenavModule, 
+     MatButtonModule, 
 
   ],
   providers: [ ],
