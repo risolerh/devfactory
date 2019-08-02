@@ -5,13 +5,6 @@
   margin: auto;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 .item {
   width: 200px;
@@ -43,18 +36,6 @@ body {
 
 
 
-
-
-
-
-/* Setting fade transition and default settings */
-body {
-  overflow-x: hidden;
-
-  color: #000;
-  background-color: #f4f4f4;
-  transition: background-color 1s ease;
-}
 
 
 

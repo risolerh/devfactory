@@ -1,65 +1,70 @@
-<div class="item item--secondary"
-     data-aos="fade-right"
-     data-aos-anchor="#trigger-left"
-     data-aos-anchor-placement="top-top">
-  LEFT
-  <span>when top of <strong>2</strong> hits top of window</span>
+
+<div class="content">
+
+    <div class="item item--secondary"
+        data-aos="fade-right"
+        data-aos-anchor="#trigger-left"
+        data-aos-anchor-placement="top-top">
+      LEFT
+      <span>when top of <strong>2</strong> hits top of window</span>
+    </div>
+
+    <div class="item item--primary"
+        data-aos="fade-left"
+        data-aos-anchor="#trigger-right"
+        data-aos-anchor-placement="top-center">
+      RIGHT
+      <span>when top of <strong>5</strong> hits center of window</span>
+    </div>
+
+
+    <div data-color="violet" data-aos="fade-up">
+        
+    </div>
+
+
+    <!-- Pasos -->
+    <div class="panel" data-color="orange" data-aos="zoom-out">
+      <h1> {{ 'home.proceso.titulo' | translate }} </h1>
+      <p> {{ 'home.proceso.descripcion' | translate }} </p>
+      <mat-vertical-stepper [linear]="isLinear">
+        <mat-step [stepControl]="firstFormGroup">
+          <ng-template matStepLabel> {{ 'home.proceso.primero.subtitulo' | translate }} </ng-template>
+          <h3> {{ 'home.proceso.primero.descripcion' | translate }} </h3>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup">
+          <ng-template matStepLabel>{{ 'home.proceso.segundo.subtitulo' | translate }}</ng-template>
+          <h3> {{ 'home.proceso.segundo.descripcion' | translate }} </h3>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>{{ 'home.proceso.tercero.subtitulo' | translate }}</ng-template>
+          <h3> {{ 'home.proceso.tercero.descripcion' | translate }} </h3>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>{{ 'home.proceso.cuarto.subtitulo' | translate }}</ng-template>
+          <h3> {{ 'home.proceso.cuarto.descripcion' | translate }} </h3>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>{{ 'home.proceso.quinto.subtitulo' | translate }}</ng-template>
+          <h3> {{ 'home.proceso.quinto.descripcion' | translate }} </h3>
+        </mat-step>
+
+      </mat-vertical-stepper>
+    </div>
+
+    <div class="item panel" data-color="red" data-aos="zoom-out">6</div>
+    <div class="item panel" data-color="violet" data-aos="slide-up"
+    id="trigger-left">7</div>
+    <div class="item panel" data-color="indigo" data-aos="flip-up">8</div>
+    <div class="item panel" data-color="blue" data-aos="flip-down">9</div>
+    <div class="item panel" data-color="green" data-aos="flip-right"
+    id="trigger-right">10</div>
+    <div class="item panel" data-color="yellow" data-aos="flip-left">11</div>
+
 </div>
 
-<div class="item item--primary"
-     data-aos="fade-left"
-     data-aos-anchor="#trigger-right"
-     data-aos-anchor-placement="top-center">
-  RIGHT
-  <span>when top of <strong>5</strong> hits center of window</span>
-</div>
-
-
-<div class="item panel" data-color="violet" data-aos="fade-up">1</div>
-<div class="item panel" data-color="indigo" data-aos="fade-down">2</div>
-<div class="item panel" data-color="blue" data-aos="fade-right">3</div>
-<div class="item panel" data-color="green" data-aos="fade-left">4</div>
-<div class="item panel" data-color="yellow" data-aos="zoom-in">5</div>
-
-<!-- Pasos -->
-<div class="panel" data-color="orange" data-aos="zoom-out">
-  <h1> {{ 'home.proceso.titulo' | translate }} </h1>
-  <p> {{ 'home.proceso.descripcion' | translate }} </p>
-  <mat-vertical-stepper [linear]="isLinear">
-    <mat-step [stepControl]="firstFormGroup">
-      <ng-template matStepLabel> {{ 'home.proceso.primero.subtitulo' | translate }} </ng-template>
-      <h3> {{ 'home.proceso.primero.descripcion' | translate }} </h3>
-    </mat-step>
-
-    <mat-step [stepControl]="secondFormGroup">
-      <ng-template matStepLabel>{{ 'home.proceso.segundo.subtitulo' | translate }}</ng-template>
-      <h3> {{ 'home.proceso.segundo.descripcion' | translate }} </h3>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>{{ 'home.proceso.tercero.subtitulo' | translate }}</ng-template>
-      <h3> {{ 'home.proceso.tercero.descripcion' | translate }} </h3>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>{{ 'home.proceso.cuarto.subtitulo' | translate }}</ng-template>
-      <h3> {{ 'home.proceso.cuarto.descripcion' | translate }} </h3>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>{{ 'home.proceso.quinto.subtitulo' | translate }}</ng-template>
-      <h3> {{ 'home.proceso.quinto.descripcion' | translate }} </h3>
-    </mat-step>
-
-  </mat-vertical-stepper>
-</div>
-
-<div class="item panel" data-color="red" data-aos="zoom-out">6</div>
-<div class="item panel" data-color="violet" data-aos="slide-up"
-id="trigger-left">7</div>
-<div class="item panel" data-color="indigo" data-aos="flip-up">8</div>
-<div class="item panel" data-color="blue" data-aos="flip-down">9</div>
-<div class="item panel" data-color="green" data-aos="flip-right"
-id="trigger-right">10</div>
-<div class="item panel" data-color="yellow" data-aos="flip-left">11</div>
 
