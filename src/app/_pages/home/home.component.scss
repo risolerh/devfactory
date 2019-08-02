@@ -34,7 +34,12 @@
   }
 }
 
+/* Setting fade transition and default settings */
 
+body {
+  overflow-x: hidden;  
+  transition: background-color 1s ease;
+}
 
 
 
