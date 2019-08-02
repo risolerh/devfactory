@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
  */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+
 /** Material design **/
 import { MatSelectModule 
        , MatFormFieldModule
@@ -33,6 +34,11 @@ export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
  
 }
+/*
+ * Plugins
+ */
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
 
 @NgModule({
   declarations: [
@@ -56,6 +62,7 @@ export function createTranslateLoader(http: HttpClient) {
      MatFormFieldModule, MatIconModule, MatMenuModule, MatListModule, MatSidenavModule, 
      MatButtonModule, 
 
+     MatCarouselModule, 
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]

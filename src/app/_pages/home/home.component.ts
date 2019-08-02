@@ -10,11 +10,12 @@ import 'aos/dist/aos.css';
 })
 export class HomeComponent implements OnInit {
 
+  public slides = [new item, new item, new item, new item];
+
   constructor() { 
     AOS.init({
-      duration: 1500,
+      duration: 3000,
       easing: 'ease-in-out-back'
-
     });
   }
 
@@ -23,5 +24,9 @@ export class HomeComponent implements OnInit {
 
 
   }
+
+}
+
+class item {
 
 }
