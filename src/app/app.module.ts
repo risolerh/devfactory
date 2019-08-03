@@ -16,7 +16,8 @@ import { MatSelectModule
        , MatListModule
        , MatSidenavModule
        , MatMenuModule 
-       , MatButtonModule}  from '@angular/material';
+       , MatButtonModule
+       , MatCardModule}  from '@angular/material';
 
 
 /*
@@ -60,7 +61,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
      /* material */
      BrowserAnimationsModule, MatToolbarModule, MatStepperModule, MatSelectModule,
      MatFormFieldModule, MatIconModule, MatMenuModule, MatListModule, MatSidenavModule, 
-     MatButtonModule, 
+     MatButtonModule, MatCardModule, 
 
      MatCarouselModule, 
   ],

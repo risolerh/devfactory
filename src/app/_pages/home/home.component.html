@@ -1,4 +1,4 @@
-<!-- carrousel  -->
+<!--  intro (carrousell) -->
 <mat-carousel
   timings="250ms ease-in"
   [autoplay]="true"
@@ -20,15 +20,17 @@
     [image]="'../../../assets/images/banner/dev.jpg'"
     overlayColor="#00000040"
     [hideOverlay]="true">
-    <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center">
-      <h1 data-aos="zoom-out">{{ "Automatizando tus ideas ..." }}</h1>
+    <div data-aos="zoom-out"
+         style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center">
+      <h1>{{ "Automatizando tus ideas ..." }}</h1>
       <p>disabled: {{ matCarouselSlide.disabled }}</p>
     </div>
   </mat-carousel-slide>
 </mat-carousel>
 
+<!-- documentales -->
 
-
+<!-- contactanos  (mostrar por la derecha) -->
 
 <div class="item item--secondary"
      data-aos="fade-right"
@@ -57,12 +59,12 @@
     </div>
 
 
-    <div data-color="violet" data-aos="fade-up">
+    <div class="item panel" data-color="violet" data-aos="fade-up">
         
     </div>
 
 
-    <!-- Pasos -->
+    <!-- Proceso de trabajo -->
     <div class="panel" data-color="orange" data-aos="zoom-out">
       <h1> {{ 'home.proceso.titulo' | translate }} </h1>
       <p> {{ 'home.proceso.descripcion' | translate }} </p>
@@ -95,14 +97,72 @@
       </mat-vertical-stepper>
     </div>
 
+
+    <!-- Que hacemos -->
     <div class="item panel" data-color="red" data-aos="zoom-out">6</div>
+
+
+    <!-- Tecnologias dominadas -->
     <div class="item panel" data-color="violet" data-aos="slide-up"
     id="trigger-left">7</div>
     <div class="item panel" data-color="indigo" data-aos="flip-up">8</div>
     <div class="item panel" data-color="blue" data-aos="flip-down">9</div>
     <div class="item panel" data-color="green" data-aos="flip-right"
     id="trigger-right">10</div>
-    <div class="item panel" data-color="yellow" data-aos="flip-left">11</div>
+    
+    
+    <!-- Nosotros -->
+    <div data-color="yellow" data-aos="flip-left"
+        fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+
+        <mat-card class="example-card" fxFlex="20%">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ 'colaboradores.ricardo.nombre' | translate }}</mat-card-title>
+            <mat-card-subtitle>{{ 'colaboradores.ricardo.especialidad' | translate }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>{{ 'colaboradores.ricardo.experiencia' | translate }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LINKENLN</button>              
+          </mat-card-actions>
+        </mat-card>
+
+
+        <mat-card class="example-card" fxFlex="20%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{ 'colaboradores.mike.nombre' | translate }}</mat-card-title>
+              <mat-card-subtitle>{{ 'colaboradores.mike.especialidad' | translate }}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>{{ 'colaboradores.mike.experiencia' | translate }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LINKENLN</button>              
+            </mat-card-actions>
+          </mat-card>
+
+
+          <mat-card class="example-card" fxFlex="20%">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{ 'colaboradores.zavala.nombre' | translate }}</mat-card-title>
+                <mat-card-subtitle>{{ 'colaboradores.zavala.especialidad' | translate }}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p>{{ 'colaboradores.zavala.experiencia' | translate }}</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LINKENLN</button>              
+              </mat-card-actions>
+            </mat-card>
+
+    </div>
 
 </div>
 
