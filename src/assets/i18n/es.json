@@ -12,13 +12,38 @@
             "titulo" : "Servicios",
             "parrafo_uno" : "Consultores de software especializado y sistematización de procesos de negocio por medio de software escalable, sostenibles, intuitivo y a la medida ( Android, IOS, Oracle, Java, Angular, JavaScript, HTML5).",
             "parrafo_dos" : "Dirigido a microempresas y macroempresas en cualquier área (recursos humanos, finanzas, comercial, operación, logística, etc.) que necesite: ",
-            "especialidades" : [
-                "Migrar su sistema interno a uno más moderno o a otra plataforma nueva.",
-                "Innovar su giro empresarial con software a medida.",
-                "Crear o actualizar su sitio web.",
-                "Centralizar cuantitativamente el rendimiento de su empresa.",
-                "Administrar cualquier tipo de información de su empresa con software."
-            ]
+            "especialidades" : {
+                "migracion" : {
+                    "titulo": "Migraciones",
+                    "descripcion" :"Transcribir un sistema a uno nuevo mas moderno"
+                },
+                "inovacion" : {
+                    "titulo" : "Innovar su giro empresarial con software a medida.",
+                    "descripcion" :""      
+                },
+                "web" : {
+                    "titulo": "Crear o actualizar su sitio web.",
+                    "descripcion" :""                    
+                },
+                "medicion" : {
+                    "titulo": "Centralizar cuantitativamente el rendimiento de su empresa.",
+                    "descripcion" :""                    
+                },
+                "admon" : {
+                    "titulo": "Migraciones de sistemas internos a uno más moderno ",
+                    "descripcion" :""                    
+                }, 
+                "machinelearning" :{
+                    "titulo": "MachineLearning",
+                    "descripcion" :""
+                }, 
+                "internetcosas" : {
+                    "titulo": "Internet de las cosas",
+                    "descripcion" :""
+                }
+
+            }
+              
         },
 
         "proceso" : {
@@ -59,7 +84,7 @@
                     "experiencia" : "29 años de edad y 7 de experiencia."                    
                 },
                 "zavala" : {
-                    "nombre" : "José Heriberto Zavala",
+                    "nombre" : "José Heriberto Zavala Larios",
                     "especialidad" : "Backend developer",
                     "experiencia" : "29 años de edad y más 7 de experiencia"
                 },

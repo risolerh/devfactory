@@ -17,7 +17,8 @@ import { MatSelectModule
        , MatSidenavModule
        , MatMenuModule 
        , MatButtonModule
-       , MatCardModule}  from '@angular/material';
+       , MatCardModule
+       , MatGridListModule}  from '@angular/material';
 
 
 /*
@@ -39,6 +40,7 @@ export function createTranslateLoader(http: HttpClient) {
  * Plugins
  */
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -61,9 +63,9 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
      /* material */
      BrowserAnimationsModule, MatToolbarModule, MatStepperModule, MatSelectModule,
      MatFormFieldModule, MatIconModule, MatMenuModule, MatListModule, MatSidenavModule, 
-     MatButtonModule, MatCardModule, 
+     MatButtonModule, MatCardModule, MatGridListModule, 
 
-     MatCarouselModule, 
+     MatCarouselModule, FlexLayoutModule
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]
