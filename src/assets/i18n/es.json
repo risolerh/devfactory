@@ -15,27 +15,27 @@
             "especialidades" : {
                 "migracion" : {
                     "titulo": "Migraciones",
-                    "descripcion" :"Transcribir un sistema a uno nuevo mas moderno"
+                    "descripcion" : "Transcribir tu sistema  actual a uno mas eficiente"
                 },
                 "inovacion" : {
-                    "titulo" : "Innovar su giro empresarial con software a medida.",
-                    "descripcion" :""      
+                    "titulo" : "Innovación",
+                    "descripcion" : "Sistematiza tu giro empresarial con software a medida"      
                 },
                 "web" : {
-                    "titulo": "Crear o actualizar su sitio web.",
-                    "descripcion" :""                    
+                    "titulo": "SitioWeb",
+                    "descripcion" : "Crear o actualizar tu sitio web."                    
                 },
                 "medicion" : {
-                    "titulo": "Centralizar cuantitativamente el rendimiento de su empresa.",
-                    "descripcion" :""                    
+                    "titulo": "Metricas",
+                    "descripcion" : "MEeimos cuantitativamente el rendimiento de tu empresa"                    
                 },
                 "admon" : {
-                    "titulo": "Migraciones de sistemas internos a uno más moderno ",
-                    "descripcion" :""                    
+                    "titulo": "Administraciòn",
+                    "descripcion" : "Creacion y/o implementacion de herramientas para control de tus procesos"                    
                 }, 
                 "machinelearning" :{
                     "titulo": "MachineLearning",
-                    "descripcion" :""
+                    "descripcion" : ""
                 }, 
                 "internetcosas" : {
                     "titulo": "Internet de las cosas",
