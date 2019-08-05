@@ -58,52 +58,18 @@
 
 
 
-
-
-<!-- documentales -->
-
-<!-- contactanos  (mostrar por la derecha) -->
-
-<div class="item item--secondary"
-     data-aos="fade-right"
-     data-aos-anchor="#trigger-left"
-     data-aos-anchor-placement="top-top">
-  LEFT
-  <span>when top of <strong>2</strong> hits top of window</span>
-</div>
-
-<div class="content">
-
-    <div class="item item--secondary"
-        data-aos="fade-right"
-        data-aos-anchor="#trigger-left"
-        data-aos-anchor-placement="top-top">
-      LEFT
-      <span>when top of <strong>2</strong> hits top of window</span>
-    </div>
-
-    <div class="item item--primary"
-        data-aos="fade-left"
-        data-aos-anchor="#trigger-right"
-        data-aos-anchor-placement="top-center">
-      RIGHT
-      <span>when top of <strong>5</strong> hits center of window</span>
-    </div>
-
-
-
     <!-- Proceso de trabajo -->
     <h1> {{ 'home.proceso.titulo' | translate }} </h1>
 
     <div class="panel" data-color="orange" data-aos="zoom-out">
       <p> {{ 'home.proceso.descripcion' | translate }} </p>
-      <mat-vertical-stepper [linear]="isLinear">
-        <mat-step [stepControl]="firstFormGroup">
+      <mat-vertical-stepper>
+        <mat-step>
           <ng-template matStepLabel> {{ 'home.proceso.primero.subtitulo' | translate }} </ng-template>
           <h3> {{ 'home.proceso.primero.descripcion' | translate }} </h3>
         </mat-step>
 
-        <mat-step [stepControl]="secondFormGroup">
+        <mat-step>
           <ng-template matStepLabel>{{ 'home.proceso.segundo.subtitulo' | translate }}</ng-template>
           <h3> {{ 'home.proceso.segundo.descripcion' | translate }} </h3>
         </mat-step>
@@ -127,18 +93,27 @@
     </div>
 
 
-    <h1> ¿Que lenguajes manejamos? </h1>
+<!-- Lista de tecnologias dominadas -->
 
-    <!-- Tecnologias dominadas -->
-    <div class="item panel" data-color="violet" data-aos="slide-up"
-    id="trigger-left">7</div>
+    <h1> ¿Que lenguajes manejamos? </h1>
+    <div class="item panel" data-color="violet" data-aos="slide-up"  id="trigger-left">7</div>
     <div class="item panel" data-color="indigo" data-aos="flip-up">8</div>
     <div class="item panel" data-color="blue" data-aos="flip-down">9</div>
-    <div class="item panel" data-color="green" data-aos="flip-right"
-    id="trigger-right">10</div>
     
+    
+
+
+<!-- Nuestros productos -->
+<h1> Productos </h1>
+<div class="panel" data-color="green" data-aos="flip-right" id="trigger-right">
+  <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="en construccion">
+</div>
+
+
+
+<!-- Nosotros -->
+
     <h1> Nosotros </h1>
-    <!-- Nosotros -->
     <div class="panel" data-color="yellow"                   
       fxLayout="row wrap" fxLayoutAlign="space-around center">
 
@@ -193,6 +168,41 @@
               </mat-card>      
 
     </div>
+
+
+
+
+<!-- contactanos  (mostrar por la derecha) -->
+
+<div class="item item--secondary"
+     data-aos="fade-right"
+     data-aos-anchor="#trigger-left"
+     data-aos-anchor-placement="top-top">
+  LEFT
+  <span>when top of <strong>2</strong> hits top of window</span>
+</div>
+
+<div class="content">
+
+    <div class="item item--secondary"
+        data-aos="fade-right"
+        data-aos-anchor="#trigger-left"
+        data-aos-anchor-placement="top-top">
+      LEFT
+      <span>when top of <strong>2</strong> hits top of window</span>
+    </div>
+
+    <div class="item item--primary"
+        data-aos="fade-left"
+        data-aos-anchor="#trigger-right"
+        data-aos-anchor-placement="top-center">
+      RIGHT
+      <span>when top of <strong>5</strong> hits center of window</span>
+    </div>
+
+
+
+
 
 </div>
 
