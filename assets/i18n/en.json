@@ -1,0 +1,83 @@
+{
+    "idioma" : "lenguaje",
+    
+    "empresa":{
+        "nombre": "Web & Mobile software solutions",
+        "descripcion" : "Fullstack software consultants"
+    },
+
+    "home" : {
+
+        "servicios" :{
+            "titulo" : "Services",
+            "parrafo_uno" : "Specialized software consultants and systematization of business processes through scalable, sustainable, intuitive and tailored software (Android, IOS, Oracle, Java, Angular, JavaScript, HTML5).",
+            "parrafo_dos" : "Aimed at micro and small enterprises in any area (human resources, finance, commercial, operation, logistics, etc.) that need:",
+            "especialidades" : [                
+                    "Migrate your internal system to a more modern one or another new platform.",
+                    "Innovate your business with custom software.",
+                    "Create or update your website.",
+                    "Quantitatively centralize the performance of your company.",
+                    "Manage any type of information of your company with software."
+            ]
+        },
+
+        "proceso" : {
+            "titulo" : "WORK MODEL",
+            "descripcion": "We work with a personal process copy of agile methodologies such as SCRUM and CASCADA",
+
+            "primero" : {
+                "subtitulo" : "ANALYSIS",
+                "descripcion" : "We schedule a meeting to listen to your request and its processes, answer questions and land software scopes." 
+            }, 
+            "segundo" : {
+                "subtitulo" : "TECHNICAL PROPOSAL",
+                "descripcion" : "According to the analysis, a proposal is delivered in pdf format with the solution (s)."                
+            }, 
+            "tercero" : {
+                "subtitulo" : "ECONOMIC PROPOSAL",
+                "descripcion" : "Once the proposal has been approved by the client, a detailed contract with solution, scope, time and costs is generated."
+            },
+            "cuarto" : {
+                "subtitulo" : "SOLUTION DEVELOPMENT",
+                "descripcion" : "The solution is built."
+            },
+            "quinto" : {
+                "subtitulo" : "SOFTWARE RELEASE",
+                "descripcion" : "Solution is delivered to customer for approval."
+            }
+        },
+
+        "nosotros" :{
+            "titulo": "US",
+            "parrafo_uno": "Group of professionals with more than 7 years of experience in the field of software development, collaborating with important companies such as Santander, Telcel, BlackBerry, Everis, Grupo Salinas, Devarana, Eglobal.",
+            "parrafo_dos": "We work fullstack projects as a freelancer, we seek to help micro businesses and macro businesses get better returns with the use of current technology tools with, add us.",
+
+            "colaboradores" : {
+                    "ricardo" : {
+                        "nombre" : "José Ricardo Soler Hernández",
+                        "especialidad" : "Web&Mobile developer",
+                        "experiencia" : "29 años de edad y 7 de experiencia."                    
+                    },
+                    "zavala" : {
+                        "nombre" : "José Heriberto Zavala Larios",
+                        "especialidad" : "Backend developer",
+                        "experiencia" : "29 años de edad y 7 de experiencia."
+                    },
+                    "mike" : {
+                        "nombre" : "Jose Miguel Briones Vázquez",
+                        "especialidad" : "Oracle Technical Leader",
+                        "experiencia" : "31 años de edad y 7 de experiencia."
+                    }
+                }            
+        },
+
+        "contacto" : {
+            "titulo" : "CONTACTO",
+            "email" : "e-mail : risolerh@gmail.com",
+            "telefono" : "celular : 04455 6610 4026",
+            "direcccion" : "El marqués de Querétaro CP. 76240"
+        }
+
+        
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "idioma" : "idioma",
+    
+    "empresa":{
+        "nombre": "Soluciones de software Web & Mobile",
+        "descripcion" : "Consultores de software fullstack"
+    },
+
+    "home" : {
+
+        "servicios" :{
+            "titulo" : "Servicios",
+            "parrafo_uno" : "Consultores de software especializado y sistematización de procesos de negocio por medio de software escalable, sostenibles, intuitivo y a la medida ( Android, IOS, Oracle, Java, Angular, JavaScript, HTML5).",
+            "parrafo_dos" : "Dirigido a microempresas y macroempresas en cualquier área (recursos humanos, finanzas, comercial, operación, logística, etc.) que necesite: ",
+            "especialidades" : {
+                "migracion" : {
+                    "titulo": "Migraciones",
+                    "descripcion" : "Transcribir tu sistema  actual a uno mas eficiente"
+                },
+                "inovacion" : {
+                    "titulo" : "Innovación",
+                    "descripcion" : "Sistematiza tu giro empresarial con software a medida"      
+                },
+                "web" : {
+                    "titulo": "SitioWeb",
+                    "descripcion" : "Crear o actualizar tu sitio web."                    
+                },
+                "bigdata" : {
+                    "titulo": "BigData",
+                    "descripcion" : "Analiticos"                    
+                },
+                "mineria" : {
+                    "titulo": "Mineria de datos",
+                    "descripcion" : "MEeimos cuantitativamente el rendimiento de tu empresa"                    
+                },
+                "admon" : {
+                    "titulo": "Administraciòn",
+                    "descripcion" : "Creacion y/o implementacion de herramientas para control de tus procesos"                    
+                }, 
+                "machinelearning" :{
+                    "titulo": "MachineLearning",
+                    "descripcion" : ""
+                }, 
+                "internetcosas" : {
+                    "titulo": "Internet de las cosas",
+                    "descripcion" :""
+                }
+
+            }
+              
+        },
+
+        "proceso" : {
+            "titulo" : "Modelo de trabajo",
+            "descripcion": "Trabajamos con un proceso personal copia de metodologías agiles como SCRUM y CASCADA",
+
+            "primero" : {
+                "subtitulo" : "ANALISIS",
+                "descripcion" : "Agendamos una junta para escuchar su solicitud y sus procesos , resolver dudas y aterrizar alcances de software."                    
+            }, 
+            "segundo" : {
+                "subtitulo" : "PROPUESTA TÉCNICA",
+                "descripcion" : "Según el análisis se entrega una propuesta en formato pdf con la solución(es)."                
+            }, 
+            "tercero" : {
+                "subtitulo" : "PROPUESTA ECONÓMICA",
+                "descripcion" : "Aprobada la propuesta por el cliente se genera un contrato detallado con solución, alcances, tiempos y costos."
+            },
+            "cuarto" : {
+                "subtitulo" : "DESARROLLO DE SOLUCIÓN",
+                "descripcion" : "Se construye la solución." 
+            },
+            "quinto" : {
+                "subtitulo" : "LIBERACIÓN DE SOFTWARE",
+                "descripcion" : "Se entrega a cliente solución para su aprobación."                
+            }
+        },
+
+        "nosotros" :{
+            "titulo": "NOSOTROS",
+            "parrafo_uno" : "Grupo de profesionales con más de 7 años de experiencia en el ramo de desarrollo de software, colaborando con empresas importantes como Santander, Telcel, BlackBerry, Everis, Grupo Salinas, Devarana, Eglobal.",
+            "parrafo_dos" : "Trabajamos proyectos fullstack como freelancer,  buscamos ayudar a microempresas y macroempresas a obtener mejores rendimientos con el uso de herramientas tecnologías actuales con , agréganos.",
+
+            "colaboradores" : {
+                "ricardo" : {
+                    "nombre" : "José Ricardo Soler Hernández",
+                    "especialidad" : "Web&Mobile developer",
+                    "experiencia" : "29 años de edad y 7 de experiencia."                    
+                },
+                "zavala" : {
+                    "nombre" : "José Heriberto Zavala Larios",
+                    "especialidad" : "Backend developer",
+                    "experiencia" : "29 años de edad y más 7 de experiencia"
+                },
+                "mike" : {
+                    "nombre" : "Jose Miguel Briones Vázquez",
+                    "especialidad" : "Oracle Technical Leader",
+                    "experiencia" : "30 años de edad y más 7 de experiencia."
+                }
+            }            
+        },
+
+        "contacto" : {
+            "titulo" : "CONTACTO",
+            "email" : "e-mail : risolerh@gmail.com",
+            "telefono" : "celular : 04455 6610 4026",
+            "direcccion" : "El marqués de Querétaro CP. 76240"
+        }
+
+
+    }
+}
