@@ -25,8 +25,12 @@
                     "titulo": "SitioWeb",
                     "descripcion" : "Crear o actualizar tu sitio web."                    
                 },
-                "medicion" : {
-                    "titulo": "Metricas",
+                "bigdata" : {
+                    "titulo": "BigData",
+                    "descripcion" : "Analiticos"                    
+                },
+                "mineria" : {
+                    "titulo": "Mineria de datos",
                     "descripcion" : "MEeimos cuantitativamente el rendimiento de tu empresa"                    
                 },
                 "admon" : {
@@ -47,7 +51,7 @@
         },
 
         "proceso" : {
-            "titulo" : "MODELO DE TRABAJO",
+            "titulo" : "Modelo de trabajo",
             "descripcion": "Trabajamos con un proceso personal copia de metodologías agiles como SCRUM y CASCADA",
 
             "primero" : {
