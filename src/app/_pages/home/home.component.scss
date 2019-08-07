@@ -1,3 +1,6 @@
+
+
+
 @mixin center-v () {
   position: fixed;
   top: 0;
@@ -9,8 +12,8 @@
 .item {
   width: 200px;
   margin: 50px auto;
-  max-height: 250px;
-  padding: 75px 20px;
+  height: 111px;
+  padding: 29px 19px;
   background: #ccc;
   text-align: center;
   color: #FFF;
@@ -24,14 +27,8 @@
   &--primary {
     @include center-v;
     right: 20px;
-    background: green;
   }
   
-  &--secondary {
-    @include center-v;
-    left: 20px;
-    background: red;
-  }
 }
 
 /* Setting fade transition and default settings */
