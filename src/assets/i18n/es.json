@@ -13,37 +13,51 @@
             "parrafo_uno" : "Consultores de software especializado y sistematización de procesos de negocio por medio de software escalable, sostenibles, intuitivo y a la medida ( Android, IOS, Oracle, Java, Angular, JavaScript, HTML5).",
             "parrafo_dos" : "Dirigido a microempresas y macroempresas en cualquier área (recursos humanos, finanzas, comercial, operación, logística, etc.) que necesite: ",
             "especialidades" : {
+
                 "migracion" : {
                     "titulo": "Migraciones",
-                    "descripcion" : "Transcribir tu sistema  actual a uno mas eficiente"
+                    "descripcion" : "Transcribimos tu sistema  actual a uno mas eficiente y moderno para mejorar tu rendimiento."
                 },
                 "inovacion" : {
-                    "titulo" : "Innovación",
-                    "descripcion" : "Sistematiza tu giro empresarial con software a medida"      
+                    "titulo" : "Inovación",
+                    "descripcion" : "Sistematizamos tu giro o ideas empresariales con software a tu medida."      
                 },
                 "web" : {
                     "titulo": "SitioWeb",
-                    "descripcion" : "Crear o actualizar tu sitio web."                    
+                    "descripcion" : "Creamos desde cero o actualizamo tu sitio web modernos con UI/UX."                    
                 },
                 "bigdata" : {
                     "titulo": "BigData",
-                    "descripcion" : "Analiticos"                    
+                    "descripcion" : "Organizamos tus DB para que te sean utiles para resolver y/o predecir problemas."                    
+                },
+                "etl" : {
+                    "titulo": "Procesos ETL",
+                    "descripcion" :"Extraemos, analizamos, interpretamos y convertimos a un nuevo formato arquitectura tus datos."
                 },
                 "mineria" : {
                     "titulo": "Mineria de datos",
-                    "descripcion" : "MEeimos cuantitativamente el rendimiento de tu empresa"                    
+                    "descripcion" : "Obtenemos patrones de tus datos para hacer predicciones de negocio y/o maximizar rendimientos."                    
+                },
+
+                "machinelearning" :{
+                    "titulo": "MachineLearning",
+                    "descripcion" : "Aplicamos algoritmos para agregar inteligencia artificial a tus procesos de negocios."
+                }, 
+                "internetcosas" : {
+                    "titulo": "Internet de las cosas (IoE)",
+                    "descripcion" :"Conectamos a internet casas, negocios, dispositivos ... inteligentes."
                 },
                 "admon" : {
                     "titulo": "Administraciòn",
                     "descripcion" : "Creacion y/o implementacion de herramientas para control de tus procesos"                    
                 }, 
-                "machinelearning" :{
-                    "titulo": "MachineLearning",
-                    "descripcion" : ""
+                "capacitacion" : {
+                    "titulo": "Cursos y capacitaciones",
+                    "descripcion" : "Capacitamos a tu personal en tecnologias de software, aplicaciones y/o sistemas."
                 }, 
-                "internetcosas" : {
-                    "titulo": "Internet de las cosas",
-                    "descripcion" :""
+                "consultoria" : {
+                    "titulo" : "Consultores",
+                    "descripcion": "Te aconsejamos sobre las mejores decisiones en tecnologías de la información."
                 }
 
             }

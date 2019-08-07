@@ -21,14 +21,17 @@ export class HomeComponent implements OnInit {
    *  
    */
   public specialties = [
-    new item("migracion.titulo",       null, "migracion.descripcion",       "trending_up" ),
-    new item("inovacion.titulo",       null, "inovacion.descripcion",       "graphic_eq" ),
-    new item("web.titulo",             null, "web.descripcion",             "web" ),
-    new item("bigdata.titulo",        null, "bigdata.descripcion",        "" ),
-    new item("mineria.titulo",        null, "mineria.descripcion",        "" ),
-    new item("admon.titulo",           null, "admon.descripcion",           "widgets" ),
-    new item("machinelearning.titulo", null, "machinelearning.descripcion", "library_add" ),
-    new item("internetcosas.titulo",   null, "internetcosas.descripcion",   "settings_system_daydream" ),
+    new item("migracion.titulo"       , null, "migracion.descripcion"         , ""), 
+    new item("inovacion.titulo"       , null, "inovacion.descripcion"         , ""), 
+    new item("web.titulo"             , null, "web.descripcion"               , ""), 
+    new item("bigdata.titulo"         , null, "bigdata.descripcion"           , ""), 
+    new item("etl.titulo"             , null, "etl.descripcion"               , ""), 
+    new item("mineria.titulo"         , null, "mineria.descripcion"           , ""), 
+    new item("machinelearning.titulo" , null, "machinelearning.descripcion"   , ""), 
+    new item("internetcosas.titulo"   , null, "internetcosas.descripcion"     , ""), 
+    new item("admon.titulo"           , null, "admon.descripcion"             , ""), 
+    new item("capacitacion.titulo"    , null, "capacitacion.descripcion"      , ""), 
+    new item("consultoria.titulo"     , null, "consultoria.descripcion"       , ""), 
   ]
 
   public 
