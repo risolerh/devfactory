@@ -12,13 +12,51 @@
             "titulo" : "Services",
             "parrafo_uno" : "Specialized software consultants and systematization of business processes through scalable, sustainable, intuitive and tailored software (Android, IOS, Oracle, Java, Angular, JavaScript, HTML5).",
             "parrafo_dos" : "Aimed at micro and small enterprises in any area (human resources, finance, commercial, operation, logistics, etc.) that need:",
-            "especialidades" : [                
-                    "Migrate your internal system to a more modern one or another new platform.",
-                    "Innovate your business with custom software.",
-                    "Create or update your website.",
-                    "Quantitatively centralize the performance of your company.",
-                    "Manage any type of information of your company with software."
-            ]
+            "especialidades" : {
+
+                "migracion" : {
+                    "titulo": "Migrations",
+                    "descripcion" : "We transcribe your current system to a more efficient and modern one to improve your performance."
+                },
+                "inovacion" : {
+                    "titulo" : "Innovación",
+                    "descripcion" : "We systematize your business or business ideas with custom software."      
+                },
+                "web" : {
+                    "titulo": "Website",
+                    "descripcion" : "We create from scratch or update your modern website with UI / UX."                    
+                },
+                "bigdata" : {
+                    "titulo": "BigData",
+                    "descripcion" : "We organize your DBs so that they are useful for solving and/or predicting problems."
+                },
+                "etl" : {
+                    "titulo": "ETL processes",
+                    "descripcion" :"We extract, analyze, interpret and convert your data into a new architecture format."
+                },
+                "mineria" : {
+                    "titulo": "Data Mining",
+                    "descripcion" : "We obtain patterns from your data to make business predictions and / or maximize returns."
+                },
+
+                "machinelearning" :{
+                    "titulo": "MachineLearning",
+                    "descripcion" : "We apply algorithms to add artificial intelligence to your business processes."
+                }, 
+                "internetcosas" : {
+                    "titulo": "Internet of things",
+                    "descripcion" :"We connect houses, businesses, devices ... smart to the internet."
+                },
+                "admon" : {
+                    "titulo": "Administration",
+                    "descripcion" : "Creation and / or implementation of tools to control your processes." 
+                }, 
+                "capacitacion" : {
+                    "titulo": "Courses and trainings",
+                    "descripcion" : "We train your staff in software technologies, applications and / or systems."
+                }
+
+            }
         },
 
         "proceso" : {
@@ -64,7 +102,7 @@
                         "experiencia" : "29 años de edad y 7 de experiencia."
                     },
                     "mike" : {
-                        "nombre" : "Jose Miguel Briones Vázquez",
+                        "nombre" : "José Miguel Briones Vázquez",
                         "especialidad" : "Oracle Technical Leader",
                         "experiencia" : "31 años de edad y 7 de experiencia."
                     }
