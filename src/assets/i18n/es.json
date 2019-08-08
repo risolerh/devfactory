@@ -44,7 +44,7 @@
                     "descripcion" : "Aplicamos algoritmos para agregar inteligencia artificial a tus procesos de negocios."
                 }, 
                 "internetcosas" : {
-                    "titulo": "Internet de las cosas (IoE)",
+                    "titulo": "Internet de las cosas",
                     "descripcion" :"Conectamos a internet casas, negocios, dispositivos ... inteligentes."
                 },
                 "admon" : {
@@ -107,7 +107,7 @@
                     "experiencia" : "29 años de edad y más 7 de experiencia"
                 },
                 "mike" : {
-                    "nombre" : "Jose Miguel Briones Vázquez",
+                    "nombre" : "José Miguel Briones Vázquez",
                     "especialidad" : "Oracle Technical Leader",
                     "experiencia" : "30 años de edad y más 7 de experiencia."
                 }

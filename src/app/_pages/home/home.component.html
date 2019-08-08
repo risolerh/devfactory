@@ -1,77 +1,87 @@
+
+
 <!--  intro (carrousell) -->
-<mat-carousel
-  timings="250ms ease-in"
-  [autoplay]="true"
-  interval="3000"
-  color="primary"
-  maxWidth="auto"
-  proportion="25"
-  slides="6"
-  [loop]="true"
-  [hideArrows]="false"
-  [hideIndicators]="true"
-  [useKeyboard]="true"
-  [useMouseWheel]="false"
-  orientation="ltr">
+<div class="content" class="panel">
+  <mat-carousel
+    timings="250ms ease-in"
+    [autoplay]="true"
+    interval="3000"
+    color="primary"
+    maxWidth="auto"
+    proportion="40"
+    slides="6"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="false"
+    [useKeyboard]="true"
+    [useMouseWheel]="false"
+    orientation="ltr" style="height: 100px;">
 
-  <mat-carousel-slide
-    #matCarouselSlide
-    *ngFor="let slide of slides; let i = index"
-    [image]="'../../../assets/images/banner/dev.jpg'"
-    overlayColor="#00000040"
-    [hideOverlay]="true">
-    <div data-aos="zoom-out"
-         style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center">
-      <h1>{{ "Automatizando tus ideas ..." }}</h1>
-    </div>
-  </mat-carousel-slide>
-</mat-carousel>
+    <mat-carousel-slide
+      #matCarouselSlide
+      *ngFor="let slide of slides; let i = index"
+      [image]="slide.img"
+      overlayColor="#00000040"
+      [hideOverlay]="true">
+      <div data-aos="zoom-out"
+          style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <h1>{{  slide.title | translate }}</h1>
+        <h3>{{  slide.subtitle | translate }}</h3>
+      </div>
+    </mat-carousel-slide>
+  </mat-carousel>
+</div>
 
 
-  <!-- Que hacemos -->
-  <h1> ¿Que hacemos? </h1>
 
-  <div class="panel" 
-    data-color="red" 
-    fxLayout="row wrap"      
-    fxLayoutAlign="space-around center">
-      
-        <mat-card data-aos="flip-left" 
-        fxFlex="300px"           
-        *ngFor="let item of specialties; let i = index" data-aos="zoom-out"
-        style="margin-bottom: 20px;">
-        <mat-card-header>              
-          <mat-card-title>
-            <mat-icon>{{ item.img }}</mat-icon> 
+<!-- Servicios-->
+<div class="content" class="panel">
+  
+  <h1 color="primary"> {{ 'home.servicios.titulo' | translate }} </h1>
+
+  <div fxLayout="row wrap"      
+       fxLayoutAlign="space-around center">      
+    <mat-card class="example-card"      
+              fxFlex="340px" 
+              *ngFor="let item of specialties; let i = index" 
+              data-aos="zoom-out"
+              style="margin-bottom: 20px; height: 120px;">
+      <mat-card-header>
+        <mat-card-title>
+            <mat-icon class="myIcon" inline="true" color="primary">{{ item.img }}</mat-icon> 
             {{ 'home.servicios.especialidades.' + item.title | translate }}
-          </mat-card-title>
-        </mat-card-header>
-        
-        <mat-card-content>
-          <p> {{ 'home.servicios.especialidades.' + item.description | translate }}</p>
-        </mat-card-content>
-        <!-- <mat-card-actions  fxLayoutAlign="center center">
-          <button mat-button>linkedin</button>              
-        </mat-card-actions> -->
-        </mat-card>            
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+          <p>
+              {{ 'home.servicios.especialidades.' + item.description | translate }}
+          </p>
+      </mat-card-content>
+    </mat-card>  
     </div>
 
     <marquee scrollamount="15">
-      <img class="img-tecno" src="../../../assets/images/tecnologias/android.png" alt=""> 
+      <img class="img-tecno" src="../../../assets/images/tecnologias/java.png" alt=""> 
+      <img class="img-tecno" src="../../../assets/images/tecnologias/html5.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/angular.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/docker.png" alt=""> 
+      <img class="img-tecno" src="../../../assets/images/tecnologias/spring.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/hibernate.png" alt=""> 
-      <img class="img-tecno" src="../../../assets/images/tecnologias/html5.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/ionic.png" alt=""> 
-      <img class="img-tecno" src="../../../assets/images/tecnologias/ios.png" alt=""> 
-      <img class="img-tecno" src="../../../assets/images/tecnologias/java.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/jquery.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/mysql.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/oracle.png" alt=""> 
-      <img class="img-tecno" src="../../../assets/images/tecnologias/spring.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/tomcat.png" alt=""> 
       <img class="img-tecno" src="../../../assets/images/tecnologias/wildfly.png" alt=""> 
+      <img class="img-tecno" src="../../../assets/images/tecnologias/ios.png" alt=""> 
+      <img class="img-tecno" src="../../../assets/images/tecnologias/android.png" alt=""> 
     </marquee>
+
+  </div> <!-- end container-->
+
+
+
 
     <!-- Proceso de trabajo -->
     <h1> {{ 'home.proceso.titulo' | translate }} </h1>
@@ -134,12 +144,15 @@
               <mat-card-subtitle>{{ 'home.nosotros.colaboradores.mike.especialidad' | translate }}</mat-card-subtitle>
             </mat-card-header>
             <img class="sepia"
-               mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of ricardo soler">
+               mat-card-image src="https://media.licdn.com/dms/image/C4E03AQHRjvujAfbmTw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=oB3eHpwbMtiD-oYgmYwaChSWb9c5P3-kqNbRU3zKdzk"
+                alt="Photo of miguel briones">
             <mat-card-content>
               <p>{{ 'home.nosotros.colaboradores.mike.experiencia' | translate }}</p>
             </mat-card-content>
             <mat-card-actions fxLayoutAlign="center center">
-              <button mat-button>linkedin</button>              
+              <button mat-button onClick="window.open('https://www.linkedin.com/in/miggbriones/')">  
+                  linkedin
+              </button>              
             </mat-card-actions>
           </mat-card>
 
@@ -150,12 +163,15 @@
                 <mat-card-subtitle>{{ 'home.nosotros.colaboradores.zavala.especialidad' | translate }}</mat-card-subtitle>
               </mat-card-header>
               <img mat-card-image class="sepia"
-                src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 alt="Photo of a jose zavala">
               <mat-card-content>
                 <p>{{ 'home.nosotros.colaboradores.zavala.experiencia' | translate }}</p>
               </mat-card-content>
               <mat-card-actions  fxLayoutAlign="center center">
-                <button mat-button>linkedin</button>              
+                  <button mat-button onClick="window.open('https://www.linkedin.com/in/jose-h-zavala-larios-104abb151/')">  
+                    linkedin
+                </button>               
               </mat-card-actions>
             </mat-card>
 
@@ -171,7 +187,7 @@
                   <p>{{ 'home.nosotros.colaboradores.ricardo.experiencia' | translate }}</p>
                 </mat-card-content>
                 <mat-card-actions fxLayoutAlign="center center">
-                  <button mat-button onClick="window.open('https://www.linkedin.com/in/risolerh/')">              
+                  <button mat-button onClick="window.open('https://www.linkedin.com/in/risolerh/')">                    
                     linkedin
                   </button>              
                 </mat-card-actions>
