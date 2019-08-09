@@ -13,11 +13,21 @@
 
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-</head>
-<body>
-  <app-root> loading ...</app-root>
-  
+
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="./assets/scripts/scroll-background-colors.js"></script>
+
+</head>
+<body>
+
+  <app-root> 
+    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <img src="./assets/images/pacman-loading.gif" 
+        style="width: 150px;height:150px; filter: grayscale(100%);" lazyload />   
+      <center><h2>loading...</h2></center>
+    </div>
+  </app-root>
+  
 </body>
 </html>
+      
