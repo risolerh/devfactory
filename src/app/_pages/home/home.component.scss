@@ -1,6 +1,4 @@
 
-
-
 @mixin center-v () {
   position: fixed;
   top: 0;
@@ -31,14 +29,6 @@
   
 }
 
-/* Setting fade transition and default settings */
-
-body {
-  overflow-x: hidden;  
-  transition: background-color 1s ease;
-}
-
-
 
 
 /* colours */
@@ -67,10 +57,6 @@ body {
   background-color: black !important;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
 
 mat-card.mat-card.ng-star-inserted.aos-init.aos-animate {
   margin-bottom: 20px;
