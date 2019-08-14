@@ -3,15 +3,54 @@
 <!--  intro (carrousell) -->
 <div class="content panel" 
   [style.height.px]="innerHeight"
-  style="background-color: goldenrod;">
+  style="background-image: linear-gradient(to bottom right, rgb(48, 52, 150), rgb(48, 52, 150) 75%, white 25%,white);">
 
-  <div fxLayout="row" 
+  <!-- Left -->
+
+  <div   
+  fxLayout="row" 
   style="width: 100%; height: 100%;">
-    <div fxFlex="30" style="background-color:red; width: 100%; height: 100%;"  fxLayoutAlign="space-around center">
-      <h1>hola</h1>
+    <div 
+    style="width: 100%; height: 100%;"  
+    fxFlex="20"     
+    data-aos="zoom-out" 
+    fxLayout="column" fxLayoutAlign="space-evenly end">
+  
+      <mat-icon class="myIcon" color="primary">developer_mode</mat-icon> 
+      <mat-icon class="myIcon" color="primary">developer_mode</mat-icon> 
     </div>
-    <div fxFlex="70" style="background-color: pink; width: 100%; height: 100%;">
-      <h1>hola</h1>
+
+    <!-- Center -->
+    <div 
+      style="width: 100%; height: 100%;" 
+      fxFlex="55" 
+      fxLayout="column" 
+      data-aos="zoom-out"
+      fxLayoutAlign="center center">
+
+      <h2 class="main__title"> Automatizando tús ideas ...</h2>
+      <span class="main__text"> Desarrollo de software a medida ...</span>
+      <div 
+        style="width: 100%;" 
+        fxLayout="row" 
+        fxLayoutAlign="space-evenly center">
+        <h4 class="main__text">backend</h4>
+        <h4 class="main__text">frontend</h4>
+        <h4 class="main__text">database</h4>
+      </div>
+      
+    </div>
+
+    <!-- right -->
+    <div 
+      style="width: 100%; height: 100%;" 
+      fxFlex="25"
+      fxLayout="column"
+      fxLayoutAlign="end center">
+      <img src="./assets/images/gif/liquid.gif"
+        data-aos="zoom-out"
+        style="width: 150px;height:150px; filter: grayscale(20%);" />  
+      <h5 data-aos="zoom-out">DEV-FACTORY</h5>
     </div>
   
   </div>
@@ -31,7 +70,7 @@
               fxFlex="340px" 
               *ngFor="let item of specialties; let i = index" 
               data-aos="zoom-out"
-              style="margin-bottom: 20px; height: 120px;">
+              style="margin-bottom: 90px; height: 140px;">
       <mat-card-header>
         <mat-card-title>
             <mat-icon class="myIcon" inline="true" color="primary">{{ item.img }}</mat-icon> 
