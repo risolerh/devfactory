@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>DevfactoryFrontend</title>
   <base href="https://risolerh.github.io/devfactory/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -14,32 +15,34 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="./assets/scripts/scroll-background-colors.js"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <script src="./assets/scripts/scroll-background-colors.js"></script>
+  <script src="./assets/scripts/carrousell-typing.js"></script>
 
   <script>
       $(function() {
       
-      $("#container-main").mousemove(function(e) {        
-        parallaxIt(e, ".efect-left", -70);                    
-        parallaxIt(e, ".efect-right", 30);        
-        parallaxIt(e, ".efect-center", -10);        
+          $("#container-main").mousemove(function(e) {        
+            parallaxIt(e, ".efect-left", -70);                    
+            parallaxIt(e, ".efect-right", 30);        
+            parallaxIt(e, ".efect-center", -10);        
+          });
+          
+          function parallaxIt(e, target, movement) {
+            var $this = $("#container-main");
+            var relX = e.pageX - $this.offset().left;
+            var relY = e.pageY - $this.offset().top;
+          
+            TweenMax.to(target, 1, {
+              x: (relX - $this.width() / 2) / $this.width() * movement,
+              y: (relY - $this.height() / 2) / $this.height() * movement
+            });
+          }
       });
-      
-      function parallaxIt(e, target, movement) {
-        var $this = $("#container-main");
-        var relX = e.pageX - $this.offset().left;
-        var relY = e.pageY - $this.offset().top;
-      
-        TweenMax.to(target, 1, {
-          x: (relX - $this.width() / 2) / $this.width() * movement,
-          y: (relY - $this.height() / 2) / $this.height() * movement
-        });
-      }
-        });
     </script> 
   
 
@@ -54,5 +57,5 @@
     </div>
   </app-root>
 
-<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.7a264d14fd7126ba8db0.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.11fb2116c81a899eaa89.js" nomodule></script><script src="main-es2015.bde4cc25b9ac93ae742a.js" type="module"></script><script src="main-es5.1aa831881bb33da8cffc.js" nomodule></script></body>
+<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.4d31cca2afc45cfd85b5.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.11fb2116c81a899eaa89.js" nomodule></script><script src="main-es2015.fa46e74f1d73e9141c22.js" type="module"></script><script src="main-es5.f783fc2e4178e53a38e5.js" nomodule></script></body>
 </html>
