@@ -6,7 +6,6 @@
   margin: auto;
 }
 
-
 .item {
   width: 200px;
   margin: 50px auto;
@@ -28,7 +27,6 @@
   }
   
 }
-
 
 
 /* colours */
@@ -68,14 +66,53 @@ mat-card.mat-card.ng-star-inserted.aos-init.aos-animate {
   height: 100px;
 }
 
-.main__title {
-  text-transform: uppercase;
-  font-size: 30px;
-  letter-spacing: .05em;
-  color: rgb(240, 222, 130)
+.main__title {  
+	color: black;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
 }
 
-.main__text {
-  text-transform: uppercase;
-  color: rgb(240, 222, 130)
+.main__subtitle {
+  font-family: Gill Sans, Verdana;
+  color: #444;
+	font-size: 11px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.text__subtitle {
+  color: black;
+  margin: 89px 0px 30px 0px;
+  padding: 0px 0px 6px 0px;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+
+#container-main {
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(197, 199, 243), 
+      rgb(179, 182, 248) 75%, 
+      white 25%,white);
+}
+
+
+
+/*  pruebas */
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }

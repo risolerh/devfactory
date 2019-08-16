@@ -3,69 +3,84 @@
 
 
 <!--  intro (carrousell) -->
-<div class="content panel"  id="container-main"
-  [style.height.px]="innerHeight"
-  style="background-image: linear-gradient(to bottom right, rgb(137, 141, 255), rgb(137, 141, 255) 75%, white 25%,white);">
+<div class="panel"  id="container-main"
+  [style.height.px]="innerHeight">
 
   <!-- Left -->
 
-  <div   
-  fxLayout="row" 
-  style="width: 100%; height: 100%;">
-    <div 
-    style="width: 100%; height: 100%;"  
+  <div fxLayout="row" fxFlexFill>
+    <div     
     fxFlex="30"     
-    data-aos="zoom-out" 
-    xLayoutAlign="center end">
-  
-        <img src="./assets/images/developers.png"
-          style="height: 100%;" />  
-    
+    data-aos="zoom-out"  
+    fxLayout="column"    
+    fxLayoutAlign="center center">
+        <img class="efect-left" 
+          src="./assets/images/banner/dev-objects.png" style="width: 100%;" />  
     </div>
 
     <!-- Center -->
-    <div 
-      style="width: 100%; height: 100%;" 
-      fxFlex="45" 
+    <div  id="title-banner"     
+      fxFlex="70" 
       fxLayout="column" 
       data-aos="zoom-out"
-      fxLayoutAlign="center center">
+      fxLayoutAlign="center left">
 
-      <h2 class="main__title"> Automatizando tús ideas ...</h2>
-      <span class="main__text"> Desarrollo de software a medida ...</span>
-      <!-- <div 
-        style="width: 100%;" 
-        fxLayout="row" 
-        fxLayoutAlign="space-evenly center">
-        <h4 class="main__text">backend</h4>
-        <h4 class="main__text">frontend</h4>
-        <h4 class="main__text">database</h4>
-      </div> -->
+      <div fxLayout="column" fxFlexFill>
+      
+        <!-- UP -->
+        <div
+          data-aos="zoom-out"
+          fxFlex="50"
+          fxLayout="column" fxLayoutAlign="end left">
+              
+              <span class="main__subtitle efect-center "> Desarrollo de software a tu medida</span>
+              <h2 class="main__title efect-center "> Automatizando tús 
+                  <img src="./assets/images/banner/foco.png" class="efect-center" alt="ideas" align="middle" 
+                    style="width: 100px;margin: -49px -33px -47px -9px;" />  
+                  deas</h2>
+              
+              <!-- <div 
+                style="width: 100%;" 
+                fxLayout="row" 
+                fxLayoutAlign="space-evenly center">
+                <h4 class="main__text">backend</h4>
+                <h4 class="main__text">frontend</h4>
+                <h4 class="main__text">database</h4>
+              </div> -->
+
+        </div>
+      
+        <!-- botoom -->
+        <div class="content"      
+        data-aos="zoom-out"
+        fxFlex="50"
+        fxLayout="column"
+        fxLayoutAlign="end end">
+          <img src="./assets/images/gif/liquid.gif" class="efect-right "
+            style="width: 150px;height:150px; filter: grayscale(200%);" />  
+          <h5 class="effect-3d">DEVELOP-FACTORY</h5>
+
+        </div>
+      
+      </div>
+
+
       
     </div>
 
-    <!-- right -->
-    <div 
-      style="width: 100%; height: 100%;" 
-      data-aos="zoom-out"
-      fxFlex="25"
-      fxLayout="column"
-      fxLayoutAlign="end center">
-      <img src="./assets/images/gif/liquid.gif"
-        style="width: 150px;height:150px; filter: grayscale(20%);" />  
-      <h5 class="item-efect">DEV-FACTORY</h5>
-    </div>
-  
   </div>
 
 </div>
 
 
 
+
+
+
 <!-- Servicios-->
 <div class="content" class="panel">
   
-  <h1 color="primary"> {{ 'home.servicios.titulo' | translate }} </h1>
+  <h2 class="text__subtitle"> {{ 'home.servicios.titulo' | translate }} </h2>
 
   <div fxLayout="row wrap"      
        fxLayoutAlign="space-around center">      
@@ -109,10 +124,27 @@
   </div> <!-- end container-->
 
 
+  <div gdGap="5px" gdColumns="repeat(auto-fill, minmax(20%, 1fr))">
+      <div class="box" gdColumn="auto / span 2">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box" gdColumn="auto / span 2" gdRow="auto / span 2">G</div>
+      <div class="box">H</div>
+      <div class="box">I</div>
+      <div class="box">J</div>
+      <div class="box" gdColumn="auto / span 3">K</div>
+      <div class="box">L</div>
+      <div class="box">M</div>
+  </div>
 
 
     <!-- Proceso de trabajo -->
-    <h1> {{ 'home.proceso.titulo' | translate }} </h1>
+<div class="content" class="panel">
+
+    <h2 class="text__subtitle"> {{ 'home.proceso.titulo' | translate }} </h2>
 
     <div class="panel" data-color="orange" data-aos="zoom-out">
       <p> {{ 'home.proceso.descripcion' | translate }} </p>
@@ -144,24 +176,29 @@
 
       </mat-vertical-stepper>
     </div>
-
+  </div>
 
         
     
 
 
 <!-- Nuestros productos -->
-<h1> Productos </h1>
-<div class="panel" data-color="green" data-aos="flip-right" id="trigger-right">
-  <img src="https://www.galponrural.com.py/construccion/images/icons/en-construccion01-1.png"
-    style="width: 100%" alt="en construccion">
+<div class="content" class="panel">  
+  <h2 class="text__subtitle"> Productos </h2>
+  <div class="panel" data-color="green" data-aos="flip-right" id="trigger-right">
+    <img src="https://www.galponrural.com.py/construccion/images/icons/en-construccion01-1.png"
+      style="width: 100%" alt="en construccion">
+  </div>
 </div>
-
 
 
 <!-- Nosotros -->
 
-    <h1> Nosotros </h1>
+<div class="content" class="panel">
+  
+    <h2 class="text__subtitle"> Nosotros </h2>
+
+
     <div class="panel" data-color="yellow"  id="trigger-left"                 
       fxLayout="row wrap" fxLayoutAlign="space-around center">
 
@@ -222,7 +259,7 @@
               </mat-card>      
 
     </div>
-
+  </div>
 
 
 

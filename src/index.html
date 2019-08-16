@@ -25,10 +25,9 @@
       $(function() {
       
       $("#container-main").mousemove(function(e) {        
-        parallaxIt(e, ".main__title", -10);
-        parallaxIt(e, ".main__text", -10);
-        parallaxIt(e, "img", -60);        
-        parallaxIt(e, ".item-efect", -60);        
+        parallaxIt(e, ".efect-left", -70);                    
+        parallaxIt(e, ".efect-right", 30);        
+        parallaxIt(e, ".efect-center", -10);        
       });
       
       function parallaxIt(e, target, movement) {
